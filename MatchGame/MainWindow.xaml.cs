@@ -25,6 +25,13 @@ namespace MatchGame
             InitializeComponent();
 
             SetUpGame();
+
+            TextBlock_MouseDown();
+        }
+
+        private void TextBlock_MouseDown()
+        {
+            throw new NotImplementedException();
         }
 
         private void SetUpGame()
@@ -52,6 +59,17 @@ namespace MatchGame
                 textBlock.Text = nextEmoji;
                 animalEmoji.RemoveAt(index);
             }
+        }
+
+        
+        private void TextBlock_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+            /* If its the first in the pair being clicked, keep track of which TextBlock was clicked and make the animal disappear. If its the second one, either make it disappear (if its a match)
+             * or bring back the first one (if its not a match)
+             */
+
+
         }
     }
 }
