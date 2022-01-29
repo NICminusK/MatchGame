@@ -26,14 +26,10 @@ namespace MatchGame
 
             SetUpGame();
 
-            TextBlock_MouseDown();
+           
         }
 
-        private void TextBlock_MouseDown()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         private void SetUpGame()
         {
             List<string> animalEmoji = new List<string>()
